@@ -18,6 +18,7 @@ import { ApiFilled } from "@ant-design/icons";
 import * as React from "react";
 import getConfig from "next/config";
 const { Content, Sider, Header } = Layout;
+import imgLogo from "images/logo.png";
 function WebLayout({ router, fullscreen, t, ...props }) {
   const path = router.pathname;
   const [visible,setVisible] = React.useState()
@@ -38,11 +39,26 @@ function WebLayout({ router, fullscreen, t, ...props }) {
   return (
     <Layout style={{ height: "100vh" }}>
       <ModalLogin visible={visible} onClickCancel={onClickCancel} {...props} />
-      <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
-        <Text strong>AdTrack</Text>
+      <Header
+        style={{
+          position: "fixed",
+          zIndex: 1,
+          width: "100%",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+          transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
+        }}
+      >
+        <img src={imgLogo} style={{ height: 36, marginLeft: 16 }}></img>
         <Button
           onClick={onClickSignIn}
-          style={{ borderRadius: 16, position: "absolute", right: 24, top: 16 }}
+          style={{
+            borderRadius: 16,
+            position: "absolute",
+            right: 24,
+            top: 16,
+            fontWeight: 300,
+            fontSize: 12,
+          }}
           type="primary"
         >
           ลงชื่อเข้าใช้

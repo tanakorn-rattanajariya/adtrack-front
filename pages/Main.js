@@ -32,6 +32,54 @@ function Main(props) {
         <title>React Starter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Description" content="Amazon Deepmap" />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-Thin.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-ExtraLight.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-Light.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-Bold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-SemiBold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-ExtraBold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/prompt/Prompt-Black.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <style
         dangerouslySetInnerHTML={{
